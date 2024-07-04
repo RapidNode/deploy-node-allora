@@ -219,7 +219,7 @@
 
     - name: Reset tendermint state
       ansible.builtin.shell: |
-        allorad tendermint unsafe-reset-all --home {{ APP_HOME }} --keep-addr-book
+        allorad tendermint unsafe-reset-all --keep-addr-book
       args:
         executable: /bin/bash
 
